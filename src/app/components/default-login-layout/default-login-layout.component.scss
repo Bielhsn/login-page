@@ -42,7 +42,24 @@ main {
             justify-content: center;
             width: 100%;
             gap: 30px;
+            
+            .divider{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                width: 100%;
+                font-size: 14px;
+                color: $gray-bg;
+                font-weight: 400;
+                text-transform: uppercase;
 
+                div{
+                    flex-grow: 1;
+                    height: 2px;
+                    background-color: $gray-bg;
+                }
+            }
             button{
                 width: 100%;
                 border-radius: 8px;
@@ -51,6 +68,7 @@ main {
                 border: none;
                 background-color: transparent;
                 padding: 12px 24px;
+                cursor: pointer;
     
                 &.btn-primary{
                     background-color: $primary-color;
@@ -58,7 +76,7 @@ main {
                     box-shadow: 0px 8px 12px rgba(148.23004603385925, 64.33935597538948, 255, 0.20000000298023224);
                 }
                 &.btn-secondary{
-                    border-color: 1px solid $primary-color;
+                    border: 1px solid $primary-color;
                     color: $primary-color;
                 }
     
